@@ -1,4 +1,4 @@
-public class string {
+public class stringDemo {
 
     /*
      * STRING IN JAVA – SHORT NOTES
