@@ -37,9 +37,27 @@ public class string {
         System.out.println("I have a "+ colour +" "+ car);
         System.out.println(greeting +"I'm Owner of this car");
 
-        
+        // string methods examples
 
+        // length() expected output: 6
+        System.out.println("Length of car name :" + car.length());
 
+        // charAt() expected output: M
+        System.out.println("First character of car name :" + car.charAt(0));
+
+        // substring() expected output: ust
+        System.out.println("Substring of car name from index 1 to 4 :" + car.substring(1,4));
+
+        // toUpperCase() and toLowerCase() expected output: HELLO! and hello!
+        System.out.println("greeting in uppercase " + greeting.toUpperCase() + "and in lowercase " + greeting.toLowerCase());
+
+        // replace() expected output: Hella!
+        System.out.println("Replacing 'o' with 'a' in greeting: " + greeting.replace('o', 'a'));
+
+        // String immutability
+        String brand = "Ford";
+        brand = brand + " Motors";
+        System.out.println("Brand: " + brand);
 
     }
     
