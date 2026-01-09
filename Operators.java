@@ -105,7 +105,7 @@ public class Operators {
          * ! Logical NOT (reverse)
          */
 
-        boolean p = true;
+        boolean p = true; 
         boolean q = false;
 
         System.out.println("p && q : " + (p && q)); // false
@@ -166,7 +166,7 @@ public class Operators {
          */
 
         int max = (x > y) ? x : y;
-        System.out.println("Maximum value: " + max);
+        System.out.println("Maximum value: " + max); // checks which is greater
 
         /*
          * Example:
