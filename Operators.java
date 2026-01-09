@@ -7,6 +7,9 @@ public class Operators {
      *
      * Operators are symbols used to perform operations on variables and values.
      *
+     * Order of Operations (P-E-M-D-A-S): Parentheses, Exponents, Multiplication, Division, Addition, Subtraction
+     * Trick to remember: (Please Excuse My Dear Aunt Sally) or (Please Excuse My Dope Ass Swag)
+     * 
      * Types of operators:
      * 1. Arithmetic Operators
      * 2. Assignment Operators
