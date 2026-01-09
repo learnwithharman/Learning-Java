@@ -1,13 +1,34 @@
 import java.util.Scanner;
+
 public class AreaOfRectangle {
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the length of the rectangle: ");
-        double length = input.nextDouble();
+        double length;
+        double width;
 
-        System.out.print("Enter the width of the rectangle: ");
-        double width = input.nextDouble();
+        // Validate length
+        do {
+            System.out.print("Enter the length of the rectangle (positive value): ");
+            length = input.nextDouble();
+
+            if (length <= 0) {
+                System.out.println("Invalid input! Length must be greater than 0.");
+            }
+
+        } while (length <= 0);
+
+        // Validate width
+        do {
+            System.out.print("Enter the width of the rectangle (positive value): ");
+            width = input.nextDouble();
+
+            if (width <= 0) {
+                System.out.println("Invalid input! Width must be greater than 0.");
+            }
+
+        } while (width <= 0);
 
         double area = length * width;
 
