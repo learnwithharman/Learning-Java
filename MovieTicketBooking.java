@@ -2,6 +2,19 @@ import java.util.Scanner;
 
 public class MovieTicketBooking {
 
+    /*
+     * ================================
+     * MOVIE TICKET BOOKING SYSTEM
+     * ================================
+     *
+     * Concepts used:
+     * - while(true) → infinite menu loop
+     * - break → exit loop
+     * - continue → skip current loop and restart
+     * - switch-case → fixed option selection
+     * - input validation using if
+     */
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -10,6 +23,7 @@ public class MovieTicketBooking {
         int seats;
         double totalBill = 0;
 
+        // Infinite loop for repeating menu
         while (true) {
 
             System.out.println("\n====== MOVIE MENU ======");
@@ -21,6 +35,7 @@ public class MovieTicketBooking {
 
             choice = sc.nextInt();
 
+            // Exit condition
             if (choice == 4) {
                 break;
             }
@@ -28,11 +43,13 @@ public class MovieTicketBooking {
             System.out.print("Enter number of seats: ");
             seats = sc.nextInt();
 
+            // Validation: seat count must be positive
             if (seats <= 0) {
                 System.out.println("Invalid seat count!");
-                continue;
+                continue;   // restart loop
             }
 
+            // switch used for fixed movie options
             switch (choice) {
 
                 case 1:
@@ -52,7 +69,7 @@ public class MovieTicketBooking {
 
                 default:
                     System.out.println("Invalid movie choice!");
-                    continue;
+                    continue;   // go back to menu
             }
 
             System.out.println("Seats Booked: " + seats);
