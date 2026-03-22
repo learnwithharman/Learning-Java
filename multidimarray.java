@@ -15,5 +15,13 @@ public class multidimarray {
             }
             System.out.println();
         }
+        for (int n[] : multiArr){ //Using an enhanced for loop to print the values of the 2D array
+            for (int m : n){
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
+
+   
     }
 }
