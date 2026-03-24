@@ -1,3 +1,12 @@
+class student{
+    String name;
+    int age;
+
+    student(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+}
 public class EnhancedForLoopExample {
 
     public static void main(String[] args) {
@@ -18,5 +27,15 @@ public class EnhancedForLoopExample {
             // 'num' stores each element of the array one by one
             System.out.println(num);
         }
+        student[] students = {
+            new student("Alice", 20),
+            new student("Bob", 22),
+            new student("Charlie", 19)
+        };
+        // Using enhanced for loop to print student details
+        for (student s : students) {
+            System.out.println("Name: " + s.name + ", Age: " + s.age);
+
+        
     }
-}
+}}
